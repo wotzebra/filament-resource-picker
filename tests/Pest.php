@@ -1,5 +1,5 @@
 <?php
 
-use Codedor\FilamentResourcePicker\Tests\TestCase;
+use Wotz\FilamentResourcePicker\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

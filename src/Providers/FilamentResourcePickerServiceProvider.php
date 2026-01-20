@@ -1,11 +1,11 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Providers;
+namespace Wotz\FilamentResourcePicker\Providers;
 
-use Codedor\FilamentResourcePicker\Livewire\ResourcePicker;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Wotz\FilamentResourcePicker\Livewire\ResourcePicker;
 
 class FilamentResourcePickerServiceProvider extends PackageServiceProvider
 {
@@ -43,6 +43,7 @@ class FilamentResourcePickerServiceProvider extends PackageServiceProvider
             return $this;
         });
 
+        Livewire::addNamespace($this->packageName(), classNamespace: 'Wotz\FilamentResourcePicker\Livewire');
         foreach ($this->livewireComponents as $key => $livewireComponent) {
             Livewire::component("{$this->packageName()}::$key", $livewireComponent);
         }

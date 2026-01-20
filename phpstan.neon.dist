@@ -14,10 +14,6 @@ parameters:
             identifier: argument.type
             path: src/Filament/Actions/OpenResourcePickerAction.php
         -
-            message: '#Property Codedor\\FilamentResourcePicker\\Filament\\Forms\\Components\\ResourcePickerInput::\$view \(view-string\) does not accept default value of type string\.#'
-            identifier: property.defaultValue
-            path: src/Filament/Forms/Components/ResourcePickerInput.php
-        -
             message: '#Parameter \#1 \$view of function view expects view-string\|null, string given\.#'
             identifier: argument.type
             path: src/Livewire/ResourcePicker.php

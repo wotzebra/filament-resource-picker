@@ -1,15 +1,13 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Filament\Forms\Components;
+namespace Wotz\FilamentResourcePicker\Filament\Forms\Components;
 
 use Closure;
-use Codedor\FilamentResourcePicker\Filament\Actions\OpenResourcePickerAction;
-use Codedor\FilamentResourcePicker\ResourceQuery;
-use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Set;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+use Wotz\FilamentResourcePicker\Filament\Actions\OpenResourcePickerAction;
+use Wotz\FilamentResourcePicker\ResourceQuery;
 
 class ResourcePickerInput extends Field
 {
@@ -32,9 +30,9 @@ class ResourcePickerInput extends Field
         $this->registerActions([
             OpenResourcePickerAction::make(),
 
-            Action::make('clear-selection')
+            \Filament\Actions\Action::make('clear-selection')
                 ->label(__('filament-resource-picker::picker.clear selection'))
-                ->action(fn (Set $set) => $set($this->getStatePath(false), []))
+                ->action(fn (\Filament\Schemas\Components\Utilities\Set $set) => $set($this->getStatePath(false), []))
                 ->color('gray'),
         ]);
     }

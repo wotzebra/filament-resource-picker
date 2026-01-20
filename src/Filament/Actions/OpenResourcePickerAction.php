@@ -1,11 +1,10 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Filament\Actions;
+namespace Wotz\FilamentResourcePicker\Filament\Actions;
 
-use Codedor\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput;
-use Filament\Forms\Components\Actions\Action;
+use Wotz\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput;
 
-class OpenResourcePickerAction extends Action
+class OpenResourcePickerAction extends \Filament\Actions\Action
 {
     public static function getDefaultName(): ?string
     {

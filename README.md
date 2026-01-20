@@ -7,13 +7,13 @@ This package allows to pick items from other resources as an alternative for rel
 You can install the package via composer:
 
 ```bash
-composer require codedor/filament-resource-picker
+composer require wotz/filament-resource-picker
 ```
 
 ## Usage
 
 ```php
-\Codedor\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput::make('related_items');
+\Wotz\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput::make('related_items');
 ```
 
 ## Documentation
@@ -40,7 +40,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover any security-related issues, please email info@codedor.be instead of using the issue tracker.
+If you discover any security-related issues, please email info@whoownsthezebra.be instead of using the issue tracker.
 
 ## License
 

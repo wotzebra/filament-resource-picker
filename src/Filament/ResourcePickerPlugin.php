@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Filament;
+namespace Wotz\FilamentResourcePicker\Filament;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;

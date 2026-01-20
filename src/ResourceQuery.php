@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker;
+namespace Wotz\FilamentResourcePicker;
 
 class ResourceQuery
 {

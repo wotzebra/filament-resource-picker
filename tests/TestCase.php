@@ -1,11 +1,11 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Tests;
+namespace Wotz\FilamentResourcePicker\Tests;
 
-use Codedor\FilamentResourcePicker\Providers\FilamentResourcePickerServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Wotz\FilamentResourcePicker\Providers\FilamentResourcePickerServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -14,7 +14,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Codedor\\FilamentResourcePicker\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Wotz\\FilamentResourcePicker\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

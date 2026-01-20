@@ -1,10 +1,10 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Livewire;
+namespace Wotz\FilamentResourcePicker\Livewire;
 
-use Codedor\FilamentResourcePicker\ResourceQuery;
 use Illuminate\Support\Arr;
 use Livewire\Component;
+use Wotz\FilamentResourcePicker\ResourceQuery;
 
 class ResourcePicker extends Component
 {

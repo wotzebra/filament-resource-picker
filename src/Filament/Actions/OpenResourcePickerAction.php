@@ -1,8 +1,8 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Filament\Actions;
+namespace Wotz\FilamentResourcePicker\Filament\Actions;
 
-use Codedor\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput;
+use Wotz\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput;
 
 class OpenResourcePickerAction extends \Filament\Actions\Action
 {

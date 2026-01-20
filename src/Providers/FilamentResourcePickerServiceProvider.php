@@ -2,10 +2,10 @@
 
 namespace Wotz\FilamentResourcePicker\Providers;
 
-use Wotz\FilamentResourcePicker\Livewire\ResourcePicker;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Wotz\FilamentResourcePicker\Livewire\ResourcePicker;
 
 class FilamentResourcePickerServiceProvider extends PackageServiceProvider
 {

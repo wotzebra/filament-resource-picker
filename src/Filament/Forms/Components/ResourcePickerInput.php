@@ -3,11 +3,11 @@
 namespace Wotz\FilamentResourcePicker\Filament\Forms\Components;
 
 use Closure;
-use Wotz\FilamentResourcePicker\Filament\Actions\OpenResourcePickerAction;
-use Wotz\FilamentResourcePicker\ResourceQuery;
 use Filament\Forms\Components\Field;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+use Wotz\FilamentResourcePicker\Filament\Actions\OpenResourcePickerAction;
+use Wotz\FilamentResourcePicker\ResourceQuery;
 
 class ResourcePickerInput extends Field
 {

@@ -2,10 +2,10 @@
 
 namespace Wotz\FilamentResourcePicker\Tests;
 
-use Wotz\FilamentResourcePicker\Providers\FilamentResourcePickerServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Wotz\FilamentResourcePicker\Providers\FilamentResourcePickerServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Http\Controllers;
+namespace Wotz\FilamentResourcePicker\Http\Controllers;
 
 class ResourcesController
 {

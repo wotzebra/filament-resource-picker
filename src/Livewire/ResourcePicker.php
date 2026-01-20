@@ -1,8 +1,8 @@
 <?php
 
-namespace Codedor\FilamentResourcePicker\Livewire;
+namespace Wotz\FilamentResourcePicker\Livewire;
 
-use Codedor\FilamentResourcePicker\ResourceQuery;
+use Wotz\FilamentResourcePicker\ResourceQuery;
 use Illuminate\Support\Arr;
 use Livewire\Component;
 

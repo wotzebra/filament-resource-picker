@@ -7,7 +7,7 @@ This package allows to pick items from other resources as an alternative for rel
 You can install the package via composer:
 
 ```bash
-composer require codedor/filament-resource-picker
+composer require wotz/filament-resource-picker
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ public static function form(Form $form): Form
 {
     return $form
         ->schema([
-            \Codedor\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput::make('author')
+            \Wotz\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput::make('author')
                 ->resource(UserResource::class),
         ]);
 }

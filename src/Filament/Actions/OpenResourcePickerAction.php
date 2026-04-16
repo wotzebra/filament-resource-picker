@@ -2,9 +2,10 @@
 
 namespace Wotz\FilamentResourcePicker\Filament\Actions;
 
+use Filament\Actions\Action;
 use Wotz\FilamentResourcePicker\Filament\Forms\Components\ResourcePickerInput;
 
-class OpenResourcePickerAction extends \Filament\Actions\Action
+class OpenResourcePickerAction extends Action
 {
     public static function getDefaultName(): ?string
     {

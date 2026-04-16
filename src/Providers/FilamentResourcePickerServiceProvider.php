@@ -2,6 +2,7 @@
 
 namespace Wotz\FilamentResourcePicker\Providers;
 
+use Illuminate\Database\Query\Builder;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -29,7 +30,7 @@ class FilamentResourcePickerServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
-        \Illuminate\Database\Query\Builder::macro('resources', function (array $ids = []) {
+        Builder::macro('resources', function (array $ids = []) {
             /** @var \Illuminate\Database\Eloquent\Builder $this */
             if (! $ids) {
                 return $this;

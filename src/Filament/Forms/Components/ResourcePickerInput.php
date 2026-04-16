@@ -3,7 +3,9 @@
 namespace Wotz\FilamentResourcePicker\Filament\Forms\Components;
 
 use Closure;
+use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
+use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Wotz\FilamentResourcePicker\Filament\Actions\OpenResourcePickerAction;
@@ -30,9 +32,9 @@ class ResourcePickerInput extends Field
         $this->registerActions([
             OpenResourcePickerAction::make(),
 
-            \Filament\Actions\Action::make('clear-selection')
+            Action::make('clear-selection')
                 ->label(__('filament-resource-picker::picker.clear selection'))
-                ->action(fn (\Filament\Schemas\Components\Utilities\Set $set) => $set($this->getStatePath(false), []))
+                ->action(fn (Set $set) => $set($this->getStatePath(false), []))
                 ->color('gray'),
         ]);
     }

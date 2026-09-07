@@ -1,12 +1,12 @@
 {
-    "name": "codedor/filament-resource-picker",
+    "name": "wotz/filament-resource-picker",
     "description": "This is my package filament-resource-picker",
     "keywords": [
-        "codedor",
+        "who owns the zebra",
         "laravel",
         "filament-resource-picker"
     ],
-    "homepage": "https://github.com/codedor/filament-resource-picker",
+    "homepage": "https://github.com/wotzebra/filament-resource-picker",
     "license": "MIT",
     "require": {
         "php": "^8.2",

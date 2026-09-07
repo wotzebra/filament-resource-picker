@@ -4,10 +4,16 @@
     minItems: @entangle('minItems'),
     maxItems: @entangle('maxItems'),
     submit () {
-        let parent = Livewire.all().find(component => component.name.includes('app.filament.resources'))
-
-        if (parent && parent.$wire.$get('{{ $statePath }}') !== undefined) {
-            parent.$wire.$set('{{ $statePath }}', this.state)
+        {{--
+            This picker is rendered inside a modal of the Livewire component that
+            owns the form (a Filament page, or a nested form component). Filament
+            only renders the modal of the topmost mounted action, so the field
+            listening for `picked-resource` is not in the DOM while this picker
+            is open. Write the selection straight to the owning component, so it
+            survives closing this modal.
+        --}}
+        if ($wire.$parent) {
+            $wire.$parent.$set('{{ $statePath }}', this.state)
         }
 
         $dispatch('picked-resource', {
